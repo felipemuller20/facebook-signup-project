@@ -10,7 +10,10 @@
 </head>
 <body>
 <header class="top-bar">
-    <img src="imgs/facebook-logo.png" alt="Logo do Facebook" class="facebook-logo">
+  <div class="image-fb">
+  <img src="imgs/facebook-logo.png" alt="Logo do Facebook" class="facebook-logo">
+  </div>
+  <div class="login-form">
     <form action="" class="facebook-login">
       <div class="form-group">
         <label for="user-email-phone" id="user-email-phone-label">Email ou telefone</label>
@@ -24,6 +27,7 @@
         <button type="" id="button-login">Entrar</button>
       </div>
     </form>
+  </div>
 </header>
 
 <main class="main-content">
@@ -35,8 +39,10 @@
   </div>
 
   <div class="right-content">
-    <h1>Abra uma conta</h1>
-    <h3 class="quick-easy">É rápido e fácil.</h3>
+    <div class="form-title">
+      <h1>Abra uma conta</h1>
+      <h3 class="quick-easy">É rápido e fácil.</h3>
+    </div>
     <form>
       <div class="name-container">
         <input id="firstname" type="text" name="firstname" placeholder="Nome" required>
@@ -49,28 +55,26 @@
       <input id="password" type="password" name="password" placeholder="Nova senha" required>
 
       <div class="birthdate-container">
-        <label id="label-birthdate" for="birthdate">Data de nascimento</label>
+        <label id="label-birthdate" for="birthdate">Data de nascimento</label><br>
 
         <input id="birthdate" type="text" name="birthdate" placeholder="dd/mm/aaaa" required>
       </div>
 
 
-        <label id="label-gender" class="gender-container" for="">Gênero</label>
+      <label id="label-gender" class="gender-container" for="">Gênero</label>
 
-        <div id="genders">
-          <input type="radio" name="gender" id="gen-fem" value="Feminino" required>
-          <label for="gen-fem">Feminino</label>
+      <div id="genders">
+        <input type="radio" name="gender" id="gen-fem" value="Feminino" required>
+        <label for="gen-fem">Feminino</label>
+        <input type="radio" name="gender" id="gen-masc" value="Masculino" required>
+        <label for="gen-masc">Masculino</label>
+        <input type="radio" name="gender" id="gen-personalized" value="Personalizado" required>
+        <label for="gen-personalized">Personalizado</label>
+      </div>
 
-          <input type="radio" name="gender" id="gen-masc" value="Masculino" required>
-          <label for="gen-masc">Masculino</label>
+      <p class="alert">Campos inválidos!</p>
 
-          <input type="radio" name="gender" id="gen-personalized" value="Personalizado" required>
-          <label for="gen-personalized">Personalizado</label>
-        </div>
-
-        <p class="alert">Campos inválidos!</p>
-
-    <button id="facebook-register" type="submit">Cadastre-se</button>
+      <button id="facebook-register" type="submit">Cadastre-se</button>
 
     </form>
   <ul class="complete"></ul>
